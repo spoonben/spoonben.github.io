@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Ben Spoon</title>
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/spoonsite.js"></script>
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="title">Ben Spoon</div>
+        <div class="social-wrap">
+            <ul class="social">
+                <li><a href="http://twitter.com/benspoon" target="_blank" class="tooltip" data-title="Twitter">&#xf099;</a></li>
+                <li><a href="http://www.linkedin.com/pub/benjamin-spoon/25/a20/870" target="_blank" class="tooltip" data-title="LinkedIn">&#xf0e1;</a></li>
+                <li><a href="http://github.com/spoonben" target="_blank" class="tooltip" data-title="Github">&#xf09b;</a></li>
+                <li><a href="/blog" class="tooltip" data-title="Blog">&#xf075;</li>
+                <!-- <li><a href="lectures.html" class="tooltip" data-title="Lectures">&#xf19d;</a></li> -->
+                <li><a href="mailto:ben@benspoon.com" class="tooltip" data-title="Email Me">&#xf0e0;</a></li>
+            </ul>
+        </div>
+        <div class="content-wrap">
+            <div class="content">
+                <div class="blog-title">
+                    <div class="blog-entry-title">Git</div>
+                </div>
+                <img src="../images/octocat.png" class="feature-image" alt="Git Logo"/>
+            <p>At work we use Git for our version control. It is pretty neat. Git is a distributed revision control and source code management system. It is fast, light, and gets the job done well.It may just be because we are also using GitHub Enterprise along with it that makes it work so well, but it is pretty awesome anyway.</p>
+
+            <p>I was used to using Visual Studio with Microsoft Source Safe. The most we did really was checking files in and out of the server, we never did feature branches or true versions. It didn't seem like, at least while we were using it, there wasn't much control over commit history or making quick rollbacks without doing the entire codebase. This was at least my experience. I'm sure there are those out there that use it as their version control and it works like a dream - but for me, not so much.</p>
+
+            <p>Now that I am using Git, and using it the correct way, I don't think I could ever go back. I mean, who could stray from the Octocats? Nobody - that's who.</p>
+
+            <p>When you know what you are doing it is a safe and effective tool. When you don't know what you are doing, and things aren't setup correctly, it will screw your day up. I could go on here to tell you about how I lost tons of work when I first started using Git, but I won't, it is a sad story.
+            That being said, I am in an environment that was setup by people who knew what they were doing - and I had some great people to teach me how to use it. So now it is pretty nice to use. It is especially nice when you have the correct standards setup. We use most of the regular Git standards for our commit process (here are some from OpenStack) and some of our own stuff.</p>
+
+            <h3>My Git Config</h3>
+            <p>Here is some of my git config from work. It has some useful aliases and shortcuts:</p>
+            <pre style="width:80%; overflow:scroll"><code>
+            [alias]
+            co = checkout
+            ci = commit
+            st = status
+            br = branch
+            l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev- commit --date=relative
+            po = push origin
+            prp = "!f() { git whatchanged origin/master..HEAD; }; f"
+            [merge]
+            tool = opendiff
+            </code></pre>
+            <p>So let me explain some of those (that aren't obvious):</p>
+            <ul>
+               <li> l (lowercase L) - this will display a pretty sweet interpretation of the git log.</li>
+               <li> prp - basically will show you what is going to go into your pull request. </li>
+            </ul>
+
+            <p>I like using opendiff as my mergetool, but you can always use your favorite editor. opendiff just seems like the best lightweight option.</p>
+            <a href="index.html">Back to my blog posts</a>
+            </div>
+        </div>
+        <!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-44841661-1', 'benspoon.com');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
+
