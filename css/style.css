@@ -46,12 +46,13 @@ body {
   height: 100px;
   margin: 0 10px;
   line-height: 100px;
-  font-size: 60px;
+  font-size: 20px;
   text-align: center;
   color: #bbb;
   border-radius: 50%;
   background: #eee;
   overflow: hidden;
+  box-shadow:#888888 1px 1px 6px
 }
 .social a {
   text-decoration: none;
@@ -197,7 +198,6 @@ h2 a {
       width: 95px;
       height: 95px;
       line-height: 95px;
-      font-size: 58px;
     }
   }
 @media (max-width: 590px) {
@@ -205,7 +205,6 @@ h2 a {
       width: 90px;
       height: 90px;
       line-height: 90px;
-      font-size: 56px;
     }
   .title {
     font-size: 65px;
@@ -216,7 +215,6 @@ h2 a {
     width:85px;
     height:85px;
     line-height:85px;
-    font-size: 54px
   }
   .title {
     font-size: 65px;
@@ -224,10 +222,10 @@ h2 a {
 }
 @media (max-width: 540px) {
   .social li {
-    font-size: 52px;
     width:80px;
     height:80px;
     line-height:80px;
+    font-size:15px;
   }
   .content{
     margin:0 50px;
@@ -241,7 +239,6 @@ h2 a {
       width: 70px;
       height: 70px;
       line-height: 70px;
-      font-size: 50px;
     }
   .title {
     font-size: 55px;
@@ -272,7 +269,6 @@ h2 a {
       width: 65px;
       height: 65px;
       line-height: 65px;
-      font-size: 40px;
     }
 }
 @media (max-width: 440px) {
@@ -280,7 +276,7 @@ h2 a {
       width: 60px;
       height: 60px;
       line-height: 60px;
-      font-size: 35px;
+      font-size:12px;
     }
 }
 @media (max-width: 415px) {
@@ -288,7 +284,7 @@ h2 a {
       width: 45px;
       height: 45px;
       line-height: 45px;
-      font-size: 25px;
+      font-size:10px;
     }
 }
 @media (max-width: 350px) {
@@ -296,6 +292,5 @@ h2 a {
       width: 40px;
       height: 40px;
       line-height: 40px;
-      font-size: 20px;
     }
 }
